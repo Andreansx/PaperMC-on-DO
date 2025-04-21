@@ -17,6 +17,7 @@ A repository containing the configuration files for my Minecraft server.
      - [Java 21 installation](#java-21-installation)
      - [Chat Formatting](#chat-prefixsuffix-formatting)
    </details>
+
 ## Server Information
 
 *   **Minecraft Version:** 1.21.4
@@ -42,6 +43,7 @@ In here, you will be able to find configuration files for my Minecraft PaperMC 1
 *   [LuckPerms](https://luckperms.net/) - A permissions management system.
 *   [TAB](https://www.spigotmc.org/resources/tab-1-5-x-1-20-x.57806/) - Advanced player list and scoreboard customization.
 *   [Multiverse-Core](https://dev.bukkit.org/projects/multiverse-core) - Multi-world management plugin.
+*   [VentureChat] - For pretty prefix/suffix formatting.
 
 ## Configuration Overview
 
@@ -92,22 +94,8 @@ root@debian-s-4vcpu-16gb-amd-fra1-01
 ```
 
 ```
-================================================================================
-Available Java Versions for Linux 64bit
-================================================================================
- Vendor        | Use | Version      | Dist    | Status     | Identifier
---------------------------------------------------------------------------------
- Corretto      |     | 24.0.1       | amzn    |            | 24.0.1-amzn         
-               |     | 24           | amzn    |            | 24-amzn             
-               |     | 23.0.2       | amzn    |            | 23.0.2-amzn         
-               |     | 21.0.7       | amzn    |            | 21.0.7-amzn         
-               |     | 21.0.6       | amzn    |            | 21.0.6-amzn         
-               |     | 17.0.15      | amzn    |            | 17.0.15-amzn        
-               |     | 17.0.14      | amzn    |            | 17.0.14-amzn        
-               |     | 11.0.27      | amzn    |            | 11.0.27-amzn        
-               |     | 11.0.26      | amzn    |            | 11.0.26-amzn        
-               |     | 8.0.452      | amzn    |            | 8.0.452-amzn        
-               |     | 8.0.442      | amzn    |            | 8.0.442-amzn
+# ...output trimmed...
+21.0.7-amzn
 ```
 ```bash
 sdk install java 21.0.7-amzn
@@ -117,55 +105,58 @@ sdk install java 21.0.7-amzn
 java -version
 # Output should be something like:
 openjdk version "21.0.7" 2025-04-15 LTS
-OpenJDK Runtime Environment Corretto-21.0.7.6.1 (build 21.0.7+6-LTS)
-OpenJDK 64-Bit Server VM Corretto-21.0.7.6.1 (build 21.0.7+6-LTS, mixed mode, sharing)
 ```
-
-This allowed me to successfully launch PaperMC 1.21.4 with full Java 21 support.
-
 
 ## Chat Prefix/Suffix Formatting
 
-Initially, I used EssentialsX Chat for formatting but encountered limitations with hex color support and integration with LuckPerms' metadata (`%vault_prefix%`, etc.). Prefixes displayed fine in TAB and above the player's head, but not in chat.
+Initially, I used EssentialsX Chat for formatting but encountered limitations:
+- **Hex colors in prefixes/suffixes were not respected**.
+- **Placeholders like `%vault_prefix%` were not rendered in chat**.
+- **Messages appeared as raw placeholders** (e.g. `%vault_prefix%%player_displayname%` or `<#21ff0e>- <#1ef327>W<#1be841>o ...` or `{vault_prefix}{player_displayname}`).
+- Even after installing PlaceholderAPI and expansions, EssentialsX Chat did not handle them correctly.
 
-### 🔧 Final Working Setup:
-- EssentialsX Chat was **disabled and removed**.
-- [VentureChat](https://www.spigotmc.org/resources/venturechat.771/) was used as the main chat plugin.
-- [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) with `vault` and `luckperms` expansions were installed and reloaded using:
+###  What I Tried:
+- Keeping EssentialsX Chat with PlaceholderAPI and LuckPerms expansions
+- Double-checking `vault-compatibility.enabled` in LuckPerms
+- Validating `vault_prefix` via `/papi parse <player> %vault_prefix%` (or `%vault_suffix%` )
+- Reloading PAPI and LuckPerms
+- Adjusting `meta-formatting` in LuckPerms config
+- Testing various prefix formats (MiniMessage, legacy `&x&...` codes, etc.)
+
+**All failed to make prefixes display correctly in EssentialsX Chat.**
+
+###  Final Working Setup:
+- Removed `EssentialsXChat.jar`
+- Installed [VentureChat](https://www.spigotmc.org/resources/venturechat.771/)
+- Installed [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/) (required by VentureChat)
+- Installed [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) and the following expansions:
 ```bash
 /papi ecloud download Vault
 /papi ecloud download LuckPerms
 /papi ecloud download player
 /papi reload
 ```
-- `LuckPerms` meta stacking was configured to enable prefix/suffix display.
-- `VentureChat/config.yml` was updated:
+- Configured `LuckPerms/config.yml` to support prefix/suffix stacking
+- Edited `plugins/VentureChat/config.yml`:
 ```yaml
-format: "{vault_prefix}{player_displayname}{vault_suffix} &7➤ &f{message}"
+format: "{vault_prefix}{player_displayname}{vault_suffix} &7➤ &f"
 ```
 
-### ✅ Result:
-Chat now correctly shows the prefix and suffix (with hex and style formatting), e.g.:
+###  Common Issues Solved:
+- **"%vault_prefix%" appearing as raw text**  caused by EssentialsX Chat, solved by switching to VentureChat
+- **Weird angle brackets `<bold><underlined>` etc.**  caused by setting MiniMessage in suffix accidentally
+- **Strange spacing between letters**  caused by adding space between every hex segment in `&x&1&2&3...`, fixed by removing spaces
+- **"No one is listening to you"**  caused by no one being in VentureChat channel; harmless
 
-### 🖌 Prefix & Suffix Color Fixes:
-- VentureChat natively supports hex colors using `&#RRGGBB` format.
-- **Spacing issues** were fixed by removing spaces between color tags.
-- **Prefix/suffix assignment** was done with:
-```bash
-lp group <groupname> meta setprefix "&x&...PrefixName..."
-lp group <groupname> meta setsuffix "&x&...SuffixName..."
-```
-
-### 🎨 Custom Prefixes Created:
+###  Custom Prefixes Created:
 
 ![prefix-setup](./prefix-setup.png)
-
 ```bash
-# MOD (Pink → Purple)
 lp group mod meta setprefix "&x&d&b&3&f&f&fM&x&c&0&3&f&f&fo&x&a&5&3&f&f&fd &r"
 
-# ADMIN (Hot Pink → Purple)
 lp group admin meta setprefix "&x&f&f&1&4&9&bA&x&e&e&1&2&a&fd&x&d&c&1&0&b&3m&x&c&a&0&e&c&7i&x&b&8&0&c&d&bn &r"
 ```
 
-Everything is now working with proper gradient colors and formatting 
+###  Final Result:
+Chat now correctly shows the gradient prefix/suffix from LuckPerms and all PAPI placeholders render properly using VentureChat.
+
