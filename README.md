@@ -15,6 +15,7 @@ A repository containing the configuration files for my Minecraft server.
      - [Configuration Overview](#configuration-overview)
      - [Detailed description](#detailed-description)
      - [Java 21 installation](#java-21-installation)
+     - [Chat Formatting](#chat-prefixsuffix-formatting)
    </details>
 ## Server Information
 
@@ -121,3 +122,50 @@ OpenJDK 64-Bit Server VM Corretto-21.0.7.6.1 (build 21.0.7+6-LTS, mixed mode, sh
 ```
 
 This allowed me to successfully launch PaperMC 1.21.4 with full Java 21 support.
+
+
+## Chat Prefix/Suffix Formatting
+
+Initially, I used EssentialsX Chat for formatting but encountered limitations with hex color support and integration with LuckPerms' metadata (`%vault_prefix%`, etc.). Prefixes displayed fine in TAB and above the player's head, but not in chat.
+
+### 🔧 Final Working Setup:
+- EssentialsX Chat was **disabled and removed**.
+- [VentureChat](https://www.spigotmc.org/resources/venturechat.771/) was used as the main chat plugin.
+- [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) with `vault` and `luckperms` expansions were installed and reloaded using:
+```bash
+/papi ecloud download Vault
+/papi ecloud download LuckPerms
+/papi ecloud download player
+/papi reload
+```
+- `LuckPerms` meta stacking was configured to enable prefix/suffix display.
+- `VentureChat/config.yml` was updated:
+```yaml
+format: "{vault_prefix}{player_displayname}{vault_suffix} &7➤ &f{message}"
+```
+
+### ✅ Result:
+Chat now correctly shows the prefix and suffix (with hex and style formatting), e.g.:
+
+### 🖌 Prefix & Suffix Color Fixes:
+- VentureChat natively supports hex colors using `&#RRGGBB` format.
+- **Spacing issues** were fixed by removing spaces between color tags.
+- **Prefix/suffix assignment** was done with:
+```bash
+lp group <groupname> meta setprefix "&x&...PrefixName..."
+lp group <groupname> meta setsuffix "&x&...SuffixName..."
+```
+
+### 🎨 Custom Prefixes Created:
+
+![prefix-setup](./prefix-setup.png)
+
+```bash
+# MOD (Pink → Purple)
+lp group mod meta setprefix "&x&d&b&3&f&f&fM&x&c&0&3&f&f&fo&x&a&5&3&f&f&fd &r"
+
+# ADMIN (Hot Pink → Purple)
+lp group admin meta setprefix "&x&f&f&1&4&9&bA&x&e&e&1&2&a&fd&x&d&c&1&0&b&3m&x&c&a&0&e&c&7i&x&b&8&0&c&d&bn &r"
+```
+
+Everything is now working with proper gradient colors and formatting 
