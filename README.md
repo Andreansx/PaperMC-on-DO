@@ -125,6 +125,11 @@ Initially, I used EssentialsX Chat for formatting but encountered limitations:
 
 **All failed to make prefixes display correctly in EssentialsX Chat.**
 
+- The chat messages ranged from looking like this:
+![](./prefix-suffix-1.png)
+- to this:
+![](./issue-prefix-suffix.png)
+
 ###  Final Working Setup:
 - Removed `EssentialsXChat.jar`
 - Installed [VentureChat](https://www.spigotmc.org/resources/venturechat.771/)
@@ -158,5 +163,10 @@ lp group admin meta setprefix "&x&f&f&1&4&9&bA&x&e&e&1&2&a&fd&x&d&c&1&0&b&3m&x&c
 ```
 
 ###  Final Result:
+
+![](./final-prefix-suffix.png)
+
+  > Note: Only the `{message}` is to be removed
+
 Chat now correctly shows the gradient prefix/suffix from LuckPerms and all PAPI placeholders render properly using VentureChat.
 
