@@ -1,0 +1,12 @@
+&8&m---------------------------------------------  
+&6&lWitaj na serwerze &a&lSurvival+ &7(&f1.21.4&7)
+&fMiło Cię widzieć, &b{PLAYER}&f!  
+
+        &6Spędzony czas online: &c {UPTIME} &f
+
+&7Zasady: &e/rules   &7Spawn: &e/spawn   &7Home: &e/home  
+&7Serwer hostowany na: &aDigitalOcean-Frankfurt-4vCPU  
+
+&8Miłej gry !
+&8&m---------------------------------------------
+

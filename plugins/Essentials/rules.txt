@@ -1,0 +1,15 @@
+&a&lZasady serwera &7(aktualne dla wszystkich graczy)
+
+&61. &fSzanuj innych graczy – brak obrażania, toksyczności czy hejtu.
+&62. &fZakaz griefingu i kradzieży – nie niszcz cudzych budowli ani nie zabieraj rzeczy bez zgody.
+&63. &fNie używaj cheatów, hacków, X-Ray itp. – uczciwa gra to podstawa.
+&64. &fZabronione są skrypty i automatyzacja (makra, autoclickery).
+&65. &fBuduj z głową – nie zalewaj terenu lawą, wodą, nie twórz lagujących maszyn.
+&66. &fNie spamuj na czacie – unikaj floodu i pisania wielkimi literami.
+&67. &fSłuchaj administracji i moderacji – ich decyzje są ostateczne.
+&68. &fNie reklamuj innych serwerów, stron czy Discordów bez zgody.
+&69. &fWszelkie konflikty rozwiązuj z kulturą – jesteśmy tu, żeby się dobrze bawić :)
+&610. &fNie nadużywaj błędów gry lub mechanik serwera.
+
+&7Naruszenie zasad może skutkować &ckickiem&7, &cmutem&7, &cbanem&7 lub inną karą.
+&8Regulamin może ulec zmianie &f
