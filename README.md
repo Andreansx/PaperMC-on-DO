@@ -52,6 +52,7 @@ This repository includes configuration files for:
 *   `plugins/LuckPerms/config.yml`: LuckPerms configuration.
 *   `plugins/TAB/config.yml`: TAB configuration.
 *   `plugins/Multiverse-Core/config.yml`: Multiverse-Core configuration.
+*   `plugins/VentureChat/config.yml`: Main Chat plugin configuration.
 
 ## Detailed description
 
