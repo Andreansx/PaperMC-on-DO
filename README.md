@@ -1,6 +1,9 @@
 # DigitalOcean - PaperMC
 
-A repository containing the configuration files for my Minecraft server.
+
+![DigitalOcean](https://img.shields.io/badge/DigitalOcean-%230167ff.svg?style=for-the-badge&logo=digitalOcean&logoColor=white)
+
+A repository containing the configuration files for my Minecraft server.  
 
 ## Server Information
 
