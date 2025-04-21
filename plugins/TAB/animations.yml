@@ -1,0 +1,118 @@
+MyAnimation1:
+  change-interval: 100
+  texts:
+    - '&d-&3--------------'
+    - '&3-&d-&3-------------'
+    - '&3--&d-&3------------'
+    - '&3---&d-&3-----------'
+    - '&3----&d-&3----------'
+    - '&3-----&d-&3---------'
+    - '&3------&d-&3--------'
+    - '&3-------&d-&3-------'
+    - '&3--------&d-&3------'
+    - '&3---------&d-&3-----'
+    - '&3----------&d-&3----'
+    - '&3-----------&d-&3---'
+    - '&3------------&d-&3--'
+    - '&3-------------&d-&3-'
+    - '&3--------------&d-'
+    - '&3-------------&d-&3-'
+    - '&3------------&d-&3--'
+    - '&3-----------&d-&3---'
+    - '&3----------&d-&3----'
+    - '&3---------&d-&3-----'
+    - '&3--------&d-&3------'
+    - '&3-------&d-&3-------'
+    - '&3------&d-&3--------'
+    - '&3-----&d-&3---------'
+    - '&3----&d-&3----------'
+    - '&3---&d-&3-----------'
+    - '&3--&d-&3------------'
+    - '&3-&d-&3-------------'
+    - '&d-&3--------------'
+ServerName:
+  change-interval: 300
+  texts:
+  - '&c&lServerName'
+  - '&c&n&lServerName'
+  - '&b&lServerName'
+  - '&b&l&nServerName'
+  - '&e&lServerName'
+  - '&e&n&lServerName'
+web:
+  change-interval: 200
+  texts:
+  - '&eandreansxtech.github.io'
+  - '&eandreansxtech.github.io'
+  - '&eandreansxtech.github.io'
+  - '&eandreansxtech.github.io'
+  - '&eandreansxtech.github.io'
+  - '&eandreansxtech.github.io'
+  - '&6a&endreansxtech.github.io'
+  - '&ea&6n&edreansxtech.github.io'
+  - '&ean&6d&ereansxtech.github.io'
+  - '&eand&6r&eansxtech.github.io'
+  - '&eandr&6e&eansxtech.github.io'
+  - '&eandre&6a&ensxtech.github.io'
+  - '&eandrea&6n&esxtech.github.io'
+  - '&eandrean&6s&extech.github.io'
+  - '&eandreans&6x&etech.github.io'
+  - '&eandreansx&6t&ech.github.io'
+  - '&eandreansxt&6e&ch.github.io'
+  - '&eandreansxte&6c&h.github.io'
+  - '&eandreansxtec&6h&.github.io'
+  - '&eandreansxtech&6.&egithub.io'
+  - '&eandreansxtech.&6g&eithub.io'
+  - '&eandreansxtech.g&6i&ethub.io'
+  - '&eandreansxtech.gi&6t&ehub.io'
+  - '&eandreansxtech.git&6h&eub.io'
+  - '&eandreansxtech.gith&6u&eb.io'
+  - '&eandreansxtech.githu&6b&e.io'
+  - '&eandreansxtech.github&6.&eio'
+  - '&eandreansxtech.github.&6i&eio'
+  - '&eandreansxtech.github.i&6o'
+  - '&eandreansxtech.github.io'
+  - '&eandreansxtech.github.io'
+  - '&eandreansxtech.github.io'
+  - '&eandreansxtech.github.io'
+  - '&eandreansxtech.github.io'
+  - '&eandreansxtech.github.io'
+vote:
+  change-interval: 1000
+  texts:
+  - '&avote.domain.com'
+  - '&a&nvote.domain.com'
+  - '&5vote.domain.com'
+  - '&5&nvote.domain.com'
+Welcome:
+  change-interval: 400
+  texts:
+  - '&7&lW_'
+  - '&7&lW_'
+  - '&7&lWe_'
+  - '&7&lWel_'
+  - '&7&lWelc_'
+  - '&7&lWelco_'
+  - '&7&lWelcom_'
+  - '&7&lWelcome_'
+  - '&7&lWelcome_'
+  - '&7&lWelcome_'
+  - '&7&lWelcome_'
+  - '&7&lWelcom_'
+  - '&7&lWelco_'
+  - '&7&lWel_'
+  - '&7&lWe_'
+  - '&7&lW_'
+  - '&7&lW_'
+time:
+  change-interval: 3000
+  texts:
+    - '&7Time &b%time%'
+    - '&7Date &b%date%'
+barcolors:
+  change-interval: 1000
+  texts:
+    - RED
+    - BLUE
+    - GREEN
+    - YELLOW
