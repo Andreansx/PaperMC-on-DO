@@ -48,7 +48,7 @@ ignore-colors-in-max-nick-length: false
 hide-displayname-in-vanish: true
 
 # Disable this if you have any other plugin, that modifies the displayname of a user.
-change-displayname: true
+change-displayname: false
 
 # This option will cause Essentials to show players' displaynames instead of usernames when tab completing Essentials commands.
 change-tab-complete-name: false
@@ -61,7 +61,7 @@ change-playerlist: true
 # This setting is ignored if EssentialsChat.jar is used, and defaults to 'true'.
 # The value of change-displayname (above) has to be true.
 # Do not edit this setting unless you know what you are doing!
-#add-prefix-suffix: false
+#add-prefix-suffix: true
 
 # When this option is enabled, player prefixes will be shown in the playerlist.
 # This feature only works for Minecraft version 1.8 and higher.
@@ -948,9 +948,12 @@ chat:
   # {TEAMPREFIX} - The sender's scoreboard team prefix.
   # {TEAMSUFFIX} - The sender's scoreboard team suffix.
 
-  format: '{DISPLAYNAME} ▶   {MESSAGE}'
+  # I deleted the EssentialsX Chat plugin, because of problems with the chat formating when using hex colors.
+
+
+  #format: '{DISPLAYNAME} ▶   {MESSAGE}'
   #format: '&7[{GROUP}]&r {DISPLAYNAME}&7:&r {MESSAGE}'
-  #format: '&7{PREFIX}&r {DISPLAYNAME}&r &7{SUFFIX}&r: {MESSAGE}'
+  format: '&7{PREFIX}&r {DISPLAYNAME}&r &7{SUFFIX}&r: {MESSAGE}'
 
   # You can also specify a format for each type of chat.
   #format:
@@ -1253,4 +1256,4 @@ spawn-on-join: false
 #- guests
 #- admin
 
-# End of file <-- No seriously, you're done with configuration.
+# End of file <-- No seriously, you're done with configuration
