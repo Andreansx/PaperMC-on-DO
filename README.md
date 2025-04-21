@@ -1,11 +1,11 @@
 # DigitalOcean - PaperMC
 
-
 ![DigitalOcean](https://img.shields.io/badge/DigitalOcean-%230167ff.svg?style=for-the-badge&logo=digitalOcean&logoColor=white) ![Debian](https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white)
 
 A repository containing the configuration files for my Minecraft server.  
 
 ![neofetch](neofetch.png)
+
 ## Server Information
 
 *   **Minecraft Version:** 1.21.4
@@ -48,31 +48,37 @@ This repository includes configuration files for:
 I run everything as a user `mc` on my server in the `/home/mc/mc-serv2` directory. 
 I use Secure File Transfer Protocol with Termius to upload necessary `.jar` files to the server, since the `wget` command does not always work.
 
-## Issues
+## Java 21 installation
 
-#### Java 21 installation issue
+Initially, I encountered an issue where `apt` would not install Java 21 — required by newer versions of PaperMC. It only had Java 17 available in the default Debian 12 repositories.
 
-One of the problems I encountered was that I couldn't get `apt` to install the newer version of Java. I needed version 21 to be able to run newer versions of Paper. However, `apt` every time I tried to install it, returned a response stating that there was no package candidate or that there was no package named that. Neither Java Runtime Environment nor Open Java Development Kit wanted to install.
-```py
+### Problem
+```bash
 root@debian-s-4vcpu-16gb-amd-fra1-01
-▶ ~ # apt install openjdk-21-jdk-headless -y
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
+▶ ~ # apt install openjdk-21-jdk-headless
 E: Unable to locate package openjdk-21-jdk-headless
-```
-```py
+
 root@debian-s-4vcpu-16gb-amd-fra1-01
-▶ ~ # apt install openjdk-21-jdk -y
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
+▶ ~ # apt install openjdk-21-jdk
 E: Unable to locate package openjdk-21-jdk
 ```
-```py
+
+### Solution: Installing Java 21 (Amazon Corretto) with SDKMAN!
+
+I solved the issue by installing [SDKMAN!](https://sdkman.io/) and using it to install Java 21 (Amazon Corretto) **both for the root user and for the `mc` user who runs the Minecraft server**.
+
+#### 1. Install SDKMAN:
+```bash
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+```
+
+#### 2. Install Java 21 (Amazon Corretto):
+```sh
 root@debian-s-4vcpu-16gb-amd-fra1-01
 ▶ ~ # sdk list java
 ```
+
 ```
 ================================================================================
 Available Java Versions for Linux 64bit
@@ -90,22 +96,15 @@ Available Java Versions for Linux 64bit
                |     | 11.0.26      | amzn    |            | 11.0.26-amzn        
                |     | 8.0.452      | amzn    |            | 8.0.452-amzn        
                |     | 8.0.442      | amzn    |            | 8.0.442-amzn
-```               
-```py
-root@debian-s-4vcpu-16gb-amd-fra1-01
-▶ ~ # sdk install java 21.0.7-amzn 
-
-Downloading: java 21.0.7-amzn
-
-In progress...
-#########################################################################100.0%
-Repackaging Java 21.0.7-amzn...
-
-Done repackaging...
-
-Installing: java 21.0.7-amzn
-
-Done installing!
-
-Setting java 21.0.7-amzn as default.
 ```
+```bash
+sdk install java 21.0.7-amzn
+```
+#### 3. Confirm installation:
+```bash
+java -version
+# Output should be something like:
+# openjdk version "21.0.7" 2024-04-16 LTS
+```
+
+This allowed me to successfully launch PaperMC 1.21.4 with full Java 21 support.
