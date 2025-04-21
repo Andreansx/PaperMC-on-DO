@@ -1,0 +1,10 @@
+command-block-overrides: []
+ignore-vanilla-permissions: false
+aliases:
+  icanhasbukkit:
+  - version $1-
+  mes:
+  - tellraw @a {"text":"[ DO-02-fran-4vcpu ] ▶ ","color":"blue","bold":true,"extra":[{"text":"$1-","color":"yellow","bold":false}]}
+  mes1:
+  - tellraw @a {"text":"[ DO-02-fran-4vcpu ] ","color":"blue","bold":true,"extra":[{"text":"$1-"}]}
+
