@@ -5,31 +5,7 @@
 
 A repository containing the configuration files for my Minecraft server.  
 
-```yml
-root@debian-s-4vcpu-16gb-amd-fra1-01
-▶ ~ # neofetch
-       _,met$$$$$gg.          root@debian-s-4vcpu-16gb-amd-fra1-01 
-    ,g$$$$$$$$$$$$$$$P.       ------------------------------------ 
-  ,g$$P"     """Y$$.".        OS: Debian GNU/Linux 12 (bookworm) x86_64 
- ,$$P'              `$$$.     Host: Droplet 20171212 
-',$$P       ,ggs.     `$$b:   Kernel: 6.1.0-33-amd64 
-`d$$'     ,$P"'   .    $$$    Uptime: 2 days, 1 hour, 17 mins 
- $$P      d$'     ,    $$P    Packages: 1102 (dpkg) 
- $$:      $$.   -    ,d$$'    Shell: bash 5.2.15 
- $$;      Y$b._   _,d$P'      Resolution: 1024x768 
- Y$$.    `.`"Y$$$$P"'         Terminal: /dev/pts/0 
- `$$b      "-.__              CPU: DO-Premium-AMD (4) @ 2.299GHz 
-  `Y$$                        GPU: 00:02.0 Red Hat, Inc. Virtio 1.0 GPU 
-   `Y$$.                      Memory: 282MiB / 15992MiB 
-     `$$b.
-       `Y$$b.                                         
-          `"Y$b._                                     
-              `"""
-
-
-root@debian-s-4vcpu-16gb-amd-fra1-01
-▶ ~ # 
-```
+![neofetch](neofetch.png)
 ## Server Information
 
 *   **Minecraft Version:** 1.21.4
