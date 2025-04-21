@@ -1,12 +1,13 @@
 &8&m---------------------------------------------  
-&6&lWitaj na serwerze &a&lSurvival+ &7(&f1.21.4&7)
+&6&lWitaj na serwerze &a&lDO-02-Fran &7(&f1.21.4&7)
 &fMiło Cię widzieć, &b{PLAYER}&f!  
 
-        &6Spędzony czas online: &c {UPTIME} &f
+        &6Czas online serwera: &c {UPTIME} &f
 
 &7Zasady: &e/rules   &7Spawn: &e/spawn   &7Home: &e/home  
-&7Serwer hostowany na: &aDigitalOcean-Frankfurt-4vCPU  
+&7Lokalizacja hostingu: Frankfurt - 1  
+&7CPU: &e4vCPU Premium AMD 3.00GHz
+&7RAM: &e16GB
 
 &8Miłej gry !
 &8&m---------------------------------------------
-
