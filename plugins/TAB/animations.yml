@@ -33,12 +33,12 @@ MyAnimation1:
 ServerName:
   change-interval: 300
   texts:
-  - '&c&lServerName'
-  - '&c&n&lServerName'
-  - '&b&lServerName'
-  - '&b&l&nServerName'
-  - '&e&lServerName'
-  - '&e&n&lServerName'
+  - '&c&lDO-02-Frankfurt'
+  - '&c&n&lDO-02-Frankfurt'
+  - '&c&lDO-02-Frankfurt'
+  - '&c&n&lDO-02-Frankfurt'
+  - '&c&lDO-02-Frankfurt'
+  - '&c&n&lDO-02-Frankfurt'
 web:
   change-interval: 200
   texts:
@@ -107,8 +107,8 @@ Welcome:
 time:
   change-interval: 3000
   texts:
-    - '&7Time &b%time%'
-    - '&7Date &b%date%'
+    - '&7Godzina &b%time%'
+    - '&7Dzień &b%date%'
 barcolors:
   change-interval: 1000
   texts:
