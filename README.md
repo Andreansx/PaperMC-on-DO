@@ -104,7 +104,9 @@ sdk install java 21.0.7-amzn
 ```bash
 java -version
 # Output should be something like:
-# openjdk version "21.0.7" 2024-04-16 LTS
+openjdk version "21.0.7" 2025-04-15 LTS
+OpenJDK Runtime Environment Corretto-21.0.7.6.1 (build 21.0.7+6-LTS)
+OpenJDK 64-Bit Server VM Corretto-21.0.7.6.1 (build 21.0.7+6-LTS, mixed mode, sharing)
 ```
 
 This allowed me to successfully launch PaperMC 1.21.4 with full Java 21 support.
