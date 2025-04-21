@@ -6,6 +6,16 @@ A repository containing the configuration files for my Minecraft server.
 
 ![neofetch](neofetch.png)
 
+  - <details> <summary>List of topics</summary>
+
+     - [Server Information](#server-information)
+     - [Machine specifications](#machine-specifications)
+     - [Overview](#overview)
+     - [Plugins Used](#plugins-used)
+     - [Configuration Overview](#configuration-overview)
+     - [Detailed description](#detailed-description)
+     - [Java 21 installation](#java-21-installation)
+   </details>
 ## Server Information
 
 *   **Minecraft Version:** 1.21.4
