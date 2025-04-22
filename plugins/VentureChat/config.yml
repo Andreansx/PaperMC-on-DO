@@ -263,7 +263,7 @@ channels:
     speak_permissions: None
     channel_prefix: '&f[ &6Network&f ]'
     format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}{vault_suffix}&f ➤  &6"
-  Announcement:
+  Vip:
     color: red
     chatcolor: red
     mutable: false
@@ -273,11 +273,11 @@ channels:
     distance: 0
     cooldown: 0
     bungeecord: true
-    alias: announce
-    permissions: None
-    speak_permissions: announcement
-    channel_prefix: '&f[&aServer Announcement&f]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&c:"
+    alias: vip
+    permissions: vipchat
+    speak_permissions: vipchat
+    channel_prefix: '&f[&aVIP Channel&f]'
+    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&f➤ &c"
   Staff:
     color: green
     chatcolor: green
@@ -292,7 +292,7 @@ channels:
     permissions: staffchannel
     speak_permissions: None
     channel_prefix: '&f[&aStaff&f]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&a:"
+    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}{vault_suffix}&f➤ &f"
   Donator:
     color: light_purple
     chatcolor: light_purple
@@ -307,7 +307,7 @@ channels:
     permissions: donatorchannel
     speak_permissions: None
     channel_prefix: '&f[&dDonator&f]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&d:"
+    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&f➤ &d"
   Help:
     color: aqua
     chatcolor: aqua
@@ -322,7 +322,7 @@ channels:
     permissions: None
     speak_permissions: None
     channel_prefix: '&f[&bHelp&f]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&b:"
+    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&f➤ &b"
   Trade:
     color: dark_aqua
     chatcolor: dark_aqua
@@ -337,7 +337,7 @@ channels:
     permissions: None
     speak_permissions: None
     channel_prefix: '&f[&3Trade&f]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&3:"
+    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&f➤ &3"
   Local:
     color: yellow
     chatcolor: yellow
@@ -352,4 +352,4 @@ channels:
     permissions: None
     speak_permissions: None
     channel_prefix: '&f[&eLocal&f]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&e:"
+    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&f➤ &e"
