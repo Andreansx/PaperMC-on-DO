@@ -246,7 +246,7 @@ channels:
     alias: g
     permissions: None
     speak_permissions: None
-    channel_prefix: '&f[&2Global&f]'
+    channel_prefix: '&f[ &2Global&f ]'
     format: "{vault_prefix}{player_displayname}{vault_suffix} &7➤  &f"
   Network:
     color: gold
@@ -259,10 +259,10 @@ channels:
     cooldown: 3
     bungeecord: true
     alias: be
-    permissions: None
+    permissions: networkchannel
     speak_permissions: None
-    channel_prefix: '&f[&6Network&f]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&6:"
+    channel_prefix: '&f[ &6Network&f ]'
+    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}{vault_suffix}&f ➤  &6"
   Announcement:
     color: red
     chatcolor: red
