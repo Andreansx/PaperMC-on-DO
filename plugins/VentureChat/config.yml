@@ -232,11 +232,10 @@ enable_factions_channel: false
 # Use '' or "" around format, example: '[&2global&f] {vault_prefix} {player_displayname}&2:'
 # You must have prefixes and suffixes set in a Vault compatible permissions plugin to avoid errors
 # Use "" as the prefix or suffix to have none
-
 channels:
   Global:
     color: dark_green
-    chatcolor: dark_green
+    chatcolor: none
     mutable: true
     filter: true
     autojoin: true
@@ -248,7 +247,7 @@ channels:
     permissions: None
     speak_permissions: None
     channel_prefix: '&f[&2Global&f]'
-    format: "{vault_prefix}{player_displayname}{vault_suffix} &7➤ &f"
+    format: "{vault_prefix}{player_displayname}{vault_suffix} &7➤  &f"
   Network:
     color: gold
     chatcolor: gold
