@@ -36,6 +36,9 @@ A repository containing the configuration files for my Minecraft server.
 
 In here, you will be able to find configuration files for my Minecraft PaperMC 1.21.4 server hosted on DigitalOcean. This setup includes essential plugins for server management, world editing, permissions, player list display, and multi-world support.  
 
+This repository is not only my journey through configuring it, fixing bugs and generally playing with settings etc.  
+But also, it can be used as a template for your own server. I will try to make every configuration here as bug-less as I can to ensure everyone can use it as a base for their own configurations. 
+
 ## Plugins Used
 
 *   [EssentialsX](https://essentialsx.net/) - Essential commands and features for server administration and gameplay.
@@ -170,3 +173,6 @@ lp group admin meta setprefix "&x&f&f&1&4&9&bA&x&e&e&1&2&a&fd&x&d&c&1&0&b&3m&x&c
 
 Chat now correctly shows the gradient prefix/suffix from LuckPerms and all PAPI placeholders render properly using VentureChat.
 
+## Contibuting
+
+I don't really think that anyone will propose any changes to this project, but If you wanted to contribute, then I am open for suggestions and happy for any forks and pull requests.
