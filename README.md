@@ -47,7 +47,7 @@ But also, it can be used as a template for your own server. I will try to make e
 *   [LuckPerms](https://luckperms.net/) - A permissions management system.
 *   [TAB](https://www.spigotmc.org/resources/tab-1-5-x-1-20-x.57806/) - Advanced player list and scoreboard customization.
 *   [Multiverse-Core](https://dev.bukkit.org/projects/multiverse-core) - Multi-world management plugin.
-*   [VentureChat](https://www.spigotmc.org/resources/venturechat.771/) - For pretty prefix/suffix formatting.
+*   [VentureChat](https://www.spigotmc.org/resources/venturechat.771/) - For advanced chat management, gradient colors, custom formats, and PlaceholderAPI integration.
 
 ## Configuration Overview
 
