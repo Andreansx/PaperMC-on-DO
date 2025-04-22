@@ -247,7 +247,7 @@ channels:
     permissions: None
     speak_permissions: None
     channel_prefix: '&f[ &2Global&f ]'
-    format: "{vault_prefix}{player_displayname}{vault_suffix} &7➤  &f"
+    format: "{vault_channel_prefix} {vault_prefix}{player_displayname}{vault_suffix} &7➤  &f"
   Network:
     color: gold
     chatcolor: gold
@@ -257,7 +257,7 @@ channels:
     default: false
     distance: 0
     cooldown: 3
-    bungeecord: true
+    bungeecord: false
     alias: be
     permissions: networkchannel
     speak_permissions: None
@@ -272,12 +272,12 @@ channels:
     default: false
     distance: 0
     cooldown: 0
-    bungeecord: true
+    bungeecord: false
     alias: vip
     permissions: vipchat
     speak_permissions: vipchat
-    channel_prefix: '&f[&aVIP Channel&f]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&f➤ &c"
+    channel_prefix: '&f[ &aVIP Channel&f ]'
+    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&f ➤ &c"
   Staff:
     color: green
     chatcolor: green
@@ -291,23 +291,8 @@ channels:
     alias: st
     permissions: staffchannel
     speak_permissions: None
-    channel_prefix: '&f[&aStaff&f]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}{vault_suffix}&f➤ &f"
-  Donator:
-    color: light_purple
-    chatcolor: light_purple
-    mutable: true
-    filter: true
-    autojoin: true
-    default: false
-    distance: 0
-    cooldown: 0
-    bungeecord: false
-    alias: d
-    permissions: donatorchannel
-    speak_permissions: None
-    channel_prefix: '&f[&dDonator&f]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&f➤ &d"
+    channel_prefix: '&f[ &aStaff&f ]'
+    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}{vault_suffix}&f ➤ &f"
   Help:
     color: aqua
     chatcolor: aqua
@@ -321,23 +306,8 @@ channels:
     alias: h
     permissions: None
     speak_permissions: None
-    channel_prefix: '&f[&bHelp&f]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&f➤ &b"
-  Trade:
-    color: dark_aqua
-    chatcolor: dark_aqua
-    mutable: true
-    filter: true
-    autojoin: true
-    default: false
-    distance: 0
-    cooldown: 0
-    bungeecord: false
-    alias: t
-    permissions: None
-    speak_permissions: None
-    channel_prefix: '&f[&3Trade&f]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&f➤ &3"
+    channel_prefix: '&f[ &bHelp&f ]'
+    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&f ➤ &b"
   Local:
     color: yellow
     chatcolor: yellow
@@ -351,5 +321,5 @@ channels:
     alias: l
     permissions: None
     speak_permissions: None
-    channel_prefix: '&f[&eLocal&f]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&f➤ &e"
+    channel_prefix: '&f[ &eLocal&f ]'
+    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&f ➤ &e"
