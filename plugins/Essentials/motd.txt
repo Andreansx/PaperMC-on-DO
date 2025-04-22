@@ -1,6 +1,5 @@
 &8&m---------------------------------------------  
-&6&lWitaj na serwerze &x&7&6&1&0&f&f&lS&x&6&c&2&5&f&9&lu&x&6&3&3&a&f&4&lr&x&5&9&5&0&e&f&lv&x&5&0&6&5&e&a&li&x&4&6&7&b&e&5&lv&x&3&d&9&0&d&f&la&x&3&3&a&6&d&a&ll&x&2&a&b&b&d&5&lP&x&2&0&d&1&d&0&ll&x&1&7&e&6&c&b&lu&x&0&e&f&c&c&6&ls
- &7(&f1.21.4&7)
+&6&lWitaj na serwerze &#7610ffS&#6c25f9u&#633af4r&#5950efv&#5065eai&#467be5v&#3d90dfa&#33a6dal&#2abbd5P&#20d1d0l&#17e6cbu&#0efcc6s  &7(&f1.21.4&7)
 &fMiło Cię widzieć, &b{PLAYER}&f!  
 
         &6Uptime serwera: &c {UPTIME} &f
