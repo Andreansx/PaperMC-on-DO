@@ -42,12 +42,16 @@ But also, it can be used as a template for your own server. I will try to make e
 
 ## Plugins Used
 
-*   [EssentialsX](https://essentialsx.net/) - Essential commands and features for server administration and gameplay.
+*   [EssentialsX](https://essentialsx.net/) - Used for managing player commands, teleportation, homes, warps, and economy systems.
 *   [WorldEdit](https://dev.bukkit.org/projects/worldedit) - In-game map editor for building and modification.
-*   [LuckPerms](https://luckperms.net/) - A permissions management system.
-*   [TAB](https://www.spigotmc.org/resources/tab-1-5-x-1-20-x.57806/) - Advanced player list and scoreboard customization.
-*   [Multiverse-Core](https://dev.bukkit.org/projects/multiverse-core) - Multi-world management plugin.
-*   [VentureChat](https://www.spigotmc.org/resources/venturechat.771/) - For advanced chat management, gradient colors, custom formats, and PlaceholderAPI integration.
+*   [LuckPerms](https://luckperms.net/) - Used for managing player permissions, groups, and prefix/suffix settings.
+*   [TAB](https://www.spigotmc.org/resources/tab-1-5-x-1-20-x.57806/) - Used for customizing the player tab list, name tags, and displaying server information.
+*   [Multiverse-Core](https://dev.bukkit.org/projects/multiverse-core) - Used for creating and managing multiple worlds with different settings.
+*   [VentureChat](https://www.spigotmc.org/resources/venturechat.771/) - Used for managing chat channels, formatting messages, and integrating placeholders.
+*   [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) - Used for providing dynamic placeholders for player stats, server info, and more.
+*   [MiniPlaceholders](https://github.com/MiniPlaceholders/MiniPlaceholders) - Used for adding additional placeholders and supporting MiniMessage formatting.
+*   [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/) - Used as a dependency for VentureChat and other plugins requiring packet manipulation.
+*   [Vault](https://www.spigotmc.org/resources/vault.34315/) - Used as a bridge for managing permissions between plugins.
 
 ## Configuration Overview
 
