@@ -1,13 +1,14 @@
 &8&m---------------------------------------------  
-&6&lWitaj na serwerze &a&lDO-02-Fran &7(&f1.21.4&7)
+&6&lWitaj na serwerze &x&7&6&1&0&f&f&lS&x&6&c&2&5&f&9&lu&x&6&3&3&a&f&4&lr&x&5&9&5&0&e&f&lv&x&5&0&6&5&e&a&li&x&4&6&7&b&e&5&lv&x&3&d&9&0&d&f&la&x&3&3&a&6&d&a&ll&x&2&a&b&b&d&5&lP&x&2&0&d&1&d&0&ll&x&1&7&e&6&c&b&lu&x&0&e&f&c&c&6&ls
+ &7(&f1.21.4&7)
 &fMiło Cię widzieć, &b{PLAYER}&f!  
 
-        &6Czas online serwera: &c {UPTIME} &f
+        &6Uptime serwera: &c {UPTIME} &f
 
 &7Zasady: &e/rules   &7Spawn: &e/spawn   &7Home: &e/home  
 &7Lokalizacja hostingu: Frankfurt - 1  
-&7CPU: &e4vCPU Premium AMD 3.00GHz
-&7RAM: &e16GB
+
+&7 Czat &6&l&r&#fece6e&lV&#fe9e9e&lI&#fe6ece&lP &r&d&l: &e/ch vip  &7 Czat &r&2&lH&#3ffe65&le&#3ffe8b&ll&#3ffeb1&lp&#3ffed7&le&b&lr: &e/ch help
 
 &8Miłej gry !
 &8&m---------------------------------------------
