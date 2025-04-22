@@ -16,6 +16,7 @@ A repository containing the configuration files for my Minecraft server.
      - [Detailed description](#detailed-description)
      - [Java 21 installation](#java-21-installation)
      - [Chat Formatting](#chat-prefixsuffix-formatting)
+     - [Contributing](#contibuting)
    </details>
 
 ## Server Information
