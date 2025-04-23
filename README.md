@@ -64,6 +64,24 @@ This repository includes configuration files for:
 *   `plugins/Multiverse-Core/config.yml`: Multiverse-Core configuration.
 *   `plugins/VentureChat/config.yml`: Main Chat plugin configuration.
 
+## Features
+
+#### Groups / Roles
+
+*   Admin
+*   Mod
+*   Helper
+*   Worldeditor
+*   Vip
+
+#### Chats
+
+*   Global
+*   Local
+*   Network
+*   Staff
+*   Help
+
 ## Detailed description
 
 I run everything as a user `mc` on my server in the `/home/mc/mc-serv2` directory. 
