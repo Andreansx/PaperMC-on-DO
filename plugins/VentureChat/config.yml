@@ -76,7 +76,7 @@ mysql:
   host: localhost
   database: Database
 
-loglevel: info
+loglevel: debug
 
 saveinterval: 30
 
