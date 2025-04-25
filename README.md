@@ -31,6 +31,7 @@ A repository containing the configuration files for my Minecraft server.
 *   **Memory:** 16GB
 *   **Disk space:** 200GB NVMe
 *   **Location:** Frankfurt Data Center - 1
+*   **OS:** Debian GNU/Linux 12 (bookworm) 12.10 amd64
 
 ## Overview
 
