@@ -1,15 +1,35 @@
-&a&lZasady serwera &7(aktualne dla wszystkich graczy)
+&a&l« Zasady Serwera Minecraft »
+&7(Obowiązują każdego gracza bez wyjątku)
 
-&61. &fSzanuj innych graczy – brak obrażania, toksyczności czy hejtu.
-&62. &fZakaz griefingu i kradzieży – nie niszcz cudzych budowli ani nie zabieraj rzeczy bez zgody.
-&63. &fNie używaj cheatów, hacków, X-Ray itp. – uczciwa gra to podstawa.
-&64. &fZabronione są skrypty i automatyzacja (makra, autoclickery).
-&65. &fBuduj z głową – nie zalewaj terenu lawą, wodą, nie twórz lagujących maszyn.
-&66. &fNie spamuj na czacie – unikaj floodu i pisania wielkimi literami.
-&67. &fSłuchaj administracji i moderacji – ich decyzje są ostateczne.
-&68. &fNie reklamuj innych serwerów, stron czy Discordów bez zgody.
-&69. &fWszelkie konflikty rozwiązuj z kulturą – jesteśmy tu, żeby się dobrze bawić :)
-&610. &fNie nadużywaj błędów gry lub mechanik serwera.
+&e&m-----------------------------------------------------&r
 
-&7Naruszenie zasad może skutkować &ckickiem&7, &cmutem&7, &cbanem&7 lub inną karą.
-&8Regulamin może ulec zmianie &f
+&61. &bSzanuj Innych Graczy:&f Brak &cobrażania&f, &ctoksyczności&f, &chejtu&f i wszelkich form nękania. Bądźmy dla siebie mili!
+
+&62. &bZakaz Griefingu i Kradzieży:&f Absolutny zakaz &cniszczenia&f cudzych budowli oraz &ckradzieży&f przedmiotów z domów/skrzynek bez wyraźnej zgody właściciela.
+
+&63. &bZero Tolerancji dla Oszustw:&f Używanie &ccheatów&f, &chacków&f, &cX-Ray&f, modyfikacji dających nieuczciwą przewagę jest &cSUROWO ZABRONIONE&f. Graj &aFair Play&f!
+
+&64. &bZakaz Automatyzacji:&f Zabronione jest używanie &cskryptów&f, &cmakr&f, &cautoclickerów&f i innych narzędzi automatyzujących rozgrywkę.
+
+&65. &bBuduj Odpowiedzialnie:&f Unikaj budowli/mechanizmów powodujących &elagi&f serwera (np. ogromne farmy mobów bez optymalizacji, zalewanie terenu). Nie twórz &e"dziur"&f w mapie bez powodu.
+
+&66. &bKultura na Czatcie:&f Nie &espamuj&f, nie &eflooduj&f, nie nadużywaj &eWIELKICH LITER&f. Używaj czatu zgodnie z jego przeznaczeniem.
+
+&67. &bRespektuj Administrację:&f Słuchaj poleceń &9Administracji&f (&cAdmin&f, &6Mod&f, &bHelper&f). Ich decyzje w sprawach serwera są &9ostateczne&f.
+
+&68. &bZakaz Reklamy:&f Nie reklamuj innych serwerów MC, stron, kanałów Discord/YT/Twitch itp. bez &awcześniejszej zgody&f Administracji.
+
+&69. &bRozwiązywanie Konfliktów:&f Wszelkie spory staraj się rozwiązywać &akulturalnie&f. Jeśli potrzebujesz pomocy, zgłoś się do &9Administracji&f. Pamiętaj, jesteśmy tu dla &adobrej zabawy&f! :)
+
+&610. &bZakaz Wykorzystywania Błędów:&f Nie nadużywaj &cbugów&f gry lub &cmechanik&f serwera dla własnej korzyści. Zgłoś znaleziony błąd &9Administracji&f.
+
+&e&m-----------------------------------------------------&r
+
+&eUwaga! &7Naruszenie powyższych zasad może skutkować:
+&f- &eUpomnieniem
+&f- &cTymczasowym wyciszeniem (&cmute&f)
+&f- &cTymczasowym wyrzuceniem (&ckick&f)
+&f- &cTymczasowym zablokowaniem konta (&ctempban&f)
+
+&8&oRegulamin może zostać zaktualizowany w dowolnym momencie.
+&8&oNieznajomość regulaminu nie zwalnia z jego przestrzegania!
