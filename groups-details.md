@@ -28,7 +28,6 @@
 [17:28:51 INFO]: > essentials.* 
 [17:28:51 INFO]: > luckperms.* 
 [17:28:51 INFO]: > tab.* 
-[17:28:51 INFO]: > worldedit.* 
 [17:28:51 INFO]: > bukkit.command.gamemode 
 [17:28:51 INFO]: > minecraft.comand.gamemode 
 [17:28:51 INFO]: > minecraft.command.gamemode 
