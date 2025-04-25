@@ -65,23 +65,10 @@ This repository includes configuration files for:
 *   `plugins/Multiverse-Core/config.yml`: Multiverse-Core configuration.
 *   `plugins/VentureChat/config.yml`: Main Chat plugin configuration.
 
-## Features
+## Featured Groups
 
-#### Groups / Roles
+The server configuration includes some LuckPerms group along with assigned prefixes/suffixes and permissions. You can find details of the groups in the <a href="./groups-details.md">groups-details.md</a>
 
-*   Admin
-*   Mod
-*   Helper
-*   Worldeditor
-*   Vip
-
-#### Chats
-
-*   Global
-*   Local
-*   Network
-*   Staff
-*   Help
 
 ## Detailed description
 
