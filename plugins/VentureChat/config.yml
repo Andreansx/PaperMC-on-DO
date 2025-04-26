@@ -247,7 +247,7 @@ channels:
     permissions: None
     speak_permissions: None
     channel_prefix: '&f[ &2Global&f ]'
-    format: "{vault_channel_prefix} {vault_prefix}{player_displayname}{vault_suffix} &7➤  &f"
+    format: "{vault_channel_prefix}{vault_prefix}{player_displayname}{vault_suffix} &7➤  &f"
   Network:
     color: gold
     chatcolor: gold
@@ -262,7 +262,7 @@ channels:
     permissions: networkchannel
     speak_permissions: None
     channel_prefix: '&f[ &6Network&f ]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}{vault_suffix}&f ➤  &6"
+    format: "{venturechat_channel_prefix}{vault_prefix}{player_displayname}{vault_suffix}&f ➤  &6"
   Vip:
     color: red
     chatcolor: red
@@ -277,7 +277,7 @@ channels:
     permissions: vipchat
     speak_permissions: vipchat
     channel_prefix: '&f[ &aVIP Channel&f ]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&f ➤ &c"
+    format: "{venturechat_channel_prefix}{vault_prefix}{player_displayname}&f ➤ &c"
   Staff:
     color: green
     chatcolor: green
@@ -292,7 +292,7 @@ channels:
     permissions: staffchannel
     speak_permissions: None
     channel_prefix: '&f[ &aStaff&f ]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}{vault_suffix}&f ➤ &f"
+    format: "{venturechat_channel_prefix}{vault_prefix}{player_displayname}{vault_suffix}&f ➤ &f"
   Help:
     color: aqua
     chatcolor: aqua
@@ -307,7 +307,7 @@ channels:
     permissions: None
     speak_permissions: None
     channel_prefix: '&f[ &bHelp&f ]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&f ➤ &b"
+    format: "{venturechat_channel_prefix}{vault_prefix}{player_displayname}&f ➤ &b"
   Local:
     color: yellow
     chatcolor: yellow
@@ -322,4 +322,4 @@ channels:
     permissions: None
     speak_permissions: None
     channel_prefix: '&f[ &eLocal&f ]'
-    format: "{venturechat_channel_prefix} {vault_prefix}{player_displayname}&f ➤ &e"
+    format: "{venturechat_channel_prefix}{vault_prefix}{player_displayname}&f ➤ &e"
