@@ -1,1 +1,6 @@
+*.yml linguist-language=YAML
+*.md linguist-documentation
+*.txt linguist-documentation
+*.png binary
+*.properties linguist-documentation
 * text=auto
