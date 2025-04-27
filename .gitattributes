@@ -2,7 +2,8 @@
 *.yaml linguist-detectable=true
 *.yml linguist-language=YAML
 *.yaml linguist-language=YAML
-*.md linguist-documentation
+*.md linguist-detectable=true
+*.md linguist-language=Markdown
 *.txt linguist-documentation
 *.png binary
 *.properties linguist-documentation

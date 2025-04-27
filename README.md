@@ -38,7 +38,9 @@ A repository containing the configuration files for my Minecraft server.
 In here, you will be able to find configuration files for my Minecraft PaperMC 1.21.4 server hosted on DigitalOcean. This setup includes essential plugins for server management, world editing, permissions, player list display, and multi-world support.  
 
 This repository is not only my journey through configuring it, fixing bugs and generally playing with settings etc.  
-But also, it can be used as a template for your own server. I will try to make every configuration here as bug-less as I can to ensure everyone can use it as a base for their own configurations. 
+But also, it can be used as a template for your own server. I will try to make every configuration here as bug-less as I can to ensure everyone can use it as a base for their own configurations.  
+
+For now I am also planning to implement some anticheat and minigames.
 
 ## Plugins Used
 
