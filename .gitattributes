@@ -1,4 +1,5 @@
 *.yml linguist-language=YAML
+*.yaml linguist-language=YAML
 *.md linguist-documentation
 *.txt linguist-documentation
 *.png binary
