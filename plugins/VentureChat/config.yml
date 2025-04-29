@@ -49,7 +49,7 @@ nickname-in-tablist: true
 # {player} : player sending command
 # {command} : command typed
 commandspy:
-  format: '&6{player}: {command}'
+  format: '{vault_prefix}&6{player}: {command}'
   worldeditcommands: true
   
 antispam:
