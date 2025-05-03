@@ -182,8 +182,6 @@ lp group admin meta setprefix "&x&f&f&1&4&9&bA&x&e&e&1&2&a&fd&x&d&c&1&0&b&3m&x&c
 
 ![](./final-prefix-suffix.png)
 
-> Now the `{message}` is removed but I have to upload a new screenshot
-
 Chat now correctly shows the gradient prefix/suffix from LuckPerms and all PAPI placeholders render properly using VentureChat.
 
 ## Contibuting
