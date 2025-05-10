@@ -1,1 +1,0 @@
-## I will place screenshots from game here, to show how the setting actually take effect in game.
